@@ -15,6 +15,7 @@
 		ED2923BE2C636144006C1251 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED2923BD2C636144006C1251 /* Base */; };
 		ED2923E22C6361A4006C1251 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2923E12C6361A4006C1251 /* SignupFormModelValidatorTests.swift */; };
 		ED2923E42C6362D1006C1251 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2923E32C6362D1006C1251 /* SignupFormModelValidator.swift */; };
+		ED2923E62C636C3A006C1251 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2923E52C636C3A006C1251 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		ED2923C42C636144006C1251 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2923E12C6361A4006C1251 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		ED2923E32C6362D1006C1251 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		ED2923E52C636C3A006C1251 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				ED2923BA2C636144006C1251 /* Assets.xcassets */,
 				ED2923BC2C636144006C1251 /* LaunchScreen.storyboard */,
 				ED2923BF2C636144006C1251 /* Info.plist */,
+				ED2923E52C636C3A006C1251 /* SignupConstants.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				ED2923B62C636143006C1251 /* ViewController.swift in Sources */,
 				ED2923B22C636143006C1251 /* AppDelegate.swift in Sources */,
 				ED2923E42C6362D1006C1251 /* SignupFormModelValidator.swift in Sources */,
+				ED2923E62C636C3A006C1251 /* SignupConstants.swift in Sources */,
 				ED2923B42C636143006C1251 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
