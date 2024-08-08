@@ -66,6 +66,20 @@ final class SignupFormModelValidatorTests: XCTestCase {
         
         let isValidEmail = sut.isEmailFormatValid(email: "lera@gmail.com")
         
-        XCTAssertTrue(isValidEmail, "The isEmailValid shuld return TRUE for valid email but returned FALSE")
+        XCTAssertTrue(isValidEmail, "The isEmailValid should return TRUE for valid email but returned FALSE")
+    }
+    
+    func testSignupFormModelValidator_WhenEqualPasswordsProvided_ShouldReturnTrue() {
+        
+        let doPasswordsMatch = sut.doPasswordsMatch(password: "12345678", repeatPassword: "12345678")
+        
+        XCTAssertTrue(doPasswordsMatch, "The doPasswordsMatch should return TRUE for matching passwords, but it returned FALSE")
+    }
+    
+    func testSignupFormModelValidator_WhenNonMatchingPasswordsProvided_ShouldReturnFalse() {
+        
+        let doPasswordsMatch = sut.doPasswordsMatch(password: "12345678", repeatPassword: "1234567")
+        
+        XCTAssertFalse(doPasswordsMatch, "The doPasswordsMatch should return FALSE for non-matching passwords, but it returned TRUE")
     }
 }
