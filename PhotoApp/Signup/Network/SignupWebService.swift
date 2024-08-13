@@ -32,7 +32,11 @@ class SignupWebService {
         request.httpBody = try? JSONEncoder().encode(formModel)
         
         let dataTask = urlSession.dataTask(with: request) { (data, response, error) in
-            <#code#>
+            if let data = data, let signupResponseModel = try? JSONDecoder().decode(SignupResponseModel.self, from: data) {
+                completionHandler(signupResponseModel, nil)
+            } else {
+//                TO DO: handle an error
+            }
         }
         
         dataTask.resume()
