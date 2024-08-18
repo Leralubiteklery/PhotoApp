@@ -26,7 +26,7 @@ final class SignupWebServiceTests: XCTestCase {
         let jsonString = "{\"status\":\"ok\" }"
         MockURLProtocol.stubResponseData = jsonString.data(using: .utf8)
         
-        let sut = SignupWebService(urlString: "https://tlyqhtlbn8.execute-api.us-east-1.amazonaws.com/prod/signup-mock-service/users")
+        let sut = SignupWebService(urlString: SignupConstants.signupURLString, urlSession: urlSession)
         
         let signupFormRequestModel = SignupFormRequestModel(firstName: "Lera", lastName: "Savchenko", email: "test@test.com", password: "12345")
         
