@@ -28,6 +28,7 @@ final class SignupWebServiceTests: XCTestCase {
         sut = nil
         signupFormRequestModel = nil
         MockURLProtocol.stubResponseData = nil
+        MockURLProtocol.error = nil
     }
     
     func testSignupWebService_WhenGivenSuccessfulResponse_ReturnsSuccess() {
