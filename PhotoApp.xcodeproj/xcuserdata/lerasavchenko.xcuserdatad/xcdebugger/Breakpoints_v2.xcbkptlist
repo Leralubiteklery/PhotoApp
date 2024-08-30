@@ -3,22 +3,4 @@
    uuid = "F268C486-DFA9-4F03-8C67-2CAF73DA3624"
    type = "1"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E5CBCECD-4E59-4DA4-8948-57EB82F9347D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoAppTests/SignupFormModelValidatorTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "testSignupFormModelValidator_WhenTooLongLastNameIsProvided_ShouldReturnFalse()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>
