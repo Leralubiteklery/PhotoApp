@@ -8,22 +8,40 @@
 import Foundation
 @testable import PhotoApp
 
+
 class MockSignupModelValidator: SignupModelValidatorProtocol {
+    
+    var isFirstNameValidated: Bool = false
+    var isLastNameValidated: Bool = false
+    var isEmailFormatValidated: Bool = false
+    var isPasswordValidated: Bool = false
+    var isPasswordEqualityValidated: Bool = false
+    
     func isFirstNameValid(firstName: String) -> Bool {
-        <#code#>
+        isFirstNameValidated = true
+        return isFirstNameValidated
     }
     
     func isLastNameValid(lastName: String) -> Bool {
-        <#code#>
+        isLastNameValidated = true
+        return isLastNameValidated
     }
     
     func isEmailFormatValid(email: String) -> Bool {
-        <#code#>
+        isEmailFormatValidated = true
+        return isEmailFormatValidated
+    }
+    
+    func isPasswordValid(password: String) -> Bool {
+        isPasswordValidated = true
+        return isPasswordValidated
     }
     
     func doPasswordsMatch(password: String, repeatPassword: String) -> Bool {
-        <#code#>
+        isPasswordEqualityValidated = true
+        return isPasswordEqualityValidated
     }
     
-    var isFirstNameValidated: Bool = false
 }
+
+

@@ -9,6 +9,17 @@ import Foundation
 
 class SignupFormModelValidator: SignupModelValidatorProtocol {
     
+    func isPasswordValid(password: String) -> Bool {
+        var returnValue = true
+        
+        if password.count < SignupConstants.passwordMinLength ||
+            password.count > SignupConstants.passwordMaxLength {
+            returnValue = false
+        }
+        
+        return returnValue
+    }
+    
     func isFirstNameValid(firstName: String) -> Bool {
         var returnValue = true
         
