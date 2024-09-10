@@ -49,12 +49,15 @@ class SignupPresenter {
         
         webService.signup(withForm: requestModel) { [weak self] responseModel, error in
             // TO DO
+            if let error = error {
+                self?.delegate?.errorHandler(error: error)
+                return
+            }
             
             if let _ = responseModel {
                 self?.delegate?.successfulSignup()
-                return
+
             }
         }
-        
     }
 }
