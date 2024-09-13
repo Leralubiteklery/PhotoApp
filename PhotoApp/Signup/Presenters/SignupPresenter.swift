@@ -48,7 +48,6 @@ class SignupPresenter {
         let requestModel = SignupFormRequestModel(firstName: formModel.firstName, lastName: formModel.lastName, email: formModel.email, password: formModel.password)
         
         webService.signup(withForm: requestModel) { [weak self] responseModel, error in
-            // TO DO
             if let error = error {
                 self?.delegate?.errorHandler(error: error)
                 return
