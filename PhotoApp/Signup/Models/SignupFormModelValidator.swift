@@ -40,6 +40,16 @@ class SignupFormModelValidator: SignupModelValidatorProtocol {
         return returnValue
     }
     
+    func isPhoneValid(phone: String) -> Bool {
+        var returnValue = true
+        
+        if phone.count < SignupConstants.phoneMinLength || phone.count > SignupConstants.phoneMaxLength {
+            returnValue = false
+        }
+        
+        return returnValue
+    }
+    
     func isEmailFormatValid(email: String) -> Bool {
         return NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: email)
     }
